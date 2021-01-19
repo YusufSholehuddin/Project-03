@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper-navbar" id="navbar">
+        <div class="title-page">
+            <span>HOME</span>
+        </div>
+        <div class="quotes">
+            <div class="sambutan">
+                <h1>Hello, How are you ?</h1>
+            </div>
+            <p>it's me <span class="name">Mohammad Yusuf Sholehuddin</span> Nice to Meet You..</p>
+        </div>
+        <ul class="navbar">
+            <li class="navbar-item">
+                <a href="#" class="navbar-link" onclick="about('#32ff7e','Halaman Tentang')">ABOUT</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#" class="navbar-link" onclick="experience('#ffaf40',' Halaman Pengalaman')">EXPERIENCE</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#" class="navbar-link"onclick="portfolio('#18dcff','Halaman Portfolio')">PORTFOLIO</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#" class="navbar-link" onclick="contact('#7d5fff','Halaman Contact')">CONTACT</a>
+            </li>
+            
+        </ul>
+    </div>
+    <script>
+        function about(color, text) {
+            const about = document.querySelector('body');
+            const h1 = document.querySelector('h1');
+            const p = document.querySelector('p');
+            const span = document.querySelector('.title-page span');
+            about.style.background =color;
+            about.style.color ='white';
+            h1.innerHTML =text;
+            p.innerHTML ="Yup itu Aku Yusup Lahir di Bogor";
+            span.innerHTML="ABOUT";
+        }
+        function experience(color, text) {
+            const about = document.querySelector('body');
+            const h1 = document.querySelector('h1');
+            const p = document.querySelector('p');
+            const span = document.querySelector('.title-page span');
+            about.style.background =color;
+            about.style.color ='white';
+            h1.innerHTML =text;
+            p.innerHTML ="belum ada pengalaman :(";
+            span.innerHTML="EXPERIENCE";
+
+        }
+        function portfolio(color, text) {
+            const about = document.querySelector('body');
+            const h1 = document.querySelector('h1');
+            const p = document.querySelector('p');
+            const span = document.querySelector('.title-page span');
+            about.style.background =color;
+            about.style.color ='white';
+            h1.innerHTML =text;
+            p.innerHTML ="Blm ada Portfolio.. masih dalam proses :D";
+            span.innerHTML="PORTFOLIO";
+
+        }
+        function contact(color,text) {
+            const about = document.querySelector('body');
+            const h1 = document.querySelector('h1');
+            const p = document.querySelector('p');
+            const span = document.querySelector('.title-page span');
+            about.style.background =color;
+            about.style.color ='white';
+            h1.innerHTML =text;
+            p.innerHTML ="Follow IG ku One_ys155";
+            span.innerHTML="CONTACT";
+
+        }
+    </script>
+</body>
+</html>
